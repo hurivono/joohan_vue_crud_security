@@ -108,7 +108,7 @@ jobs:
           context: .
           push: true
           file: ./Dockerfile
-          platforms: linux/amd64, linux/arm64
+          platforms: linux/amd64
           build-args: |
             WHATAP_HOST: ${{ secrets.WHATAP_HOST }}
           tags: ${{ secrets.AZURE_URL }}/${{ steps.meta.outputs.tags }}
