@@ -19,7 +19,7 @@ ENV APPLICATIONINSIGHTS_CONNECTION_STRING="InstrumentationKey=02a052e7-48b4-408a
 ### Azure Opentelemetry ###
 
 ### Azure Opentelemetry ###
-ENV JAVA_OPTS="${JAVA_OPTS} -javaagent:applicationinsights-agent-3.5.4.jar"
+# ENV JAVA_OPTS="${JAVA_OPTS} -javaagent:applicationinsights-agent-3.5.4.jar"
 ### Azure Opentelemetry ###
 
 ENV BACKEND_API_URL backend
