@@ -14,7 +14,7 @@ import App from './App.vue';
 import router from './router';
 
 
-// application insights
+// application insights - 241030 수정
 import { ApplicationInsights } from '@microsoft/applicationinsights-web';
 const appInsights = new ApplicationInsights({
     config: {
