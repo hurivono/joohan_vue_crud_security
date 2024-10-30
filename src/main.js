@@ -13,6 +13,18 @@ import 'quasar/src/css/index.sass';
 import App from './App.vue';
 import router from './router';
 
+
+// application insights
+import { ApplicationInsights } from '@microsoft/applicationinsights-web';
+const appInsights = new ApplicationInsights({
+    config: {
+        instrumentationKey: '02a052e7-48b4-408a-ad85-9dfcefed3b77', // 연결 문자열에서 Instrumentation Key만 사용
+        enableAutoRouteTracking: true
+    }
+});
+appInsights.loadAppInsights();
+// --
+
 // 테스트 용도의 더미 백엔드
 // import { fakeBackend } from './helpers';
 // fakeBackend();
